@@ -497,52 +497,98 @@
     <!-- Contact -->
     <div id="contact" class="form-1 bg-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#your-link">contact@domain.com</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Project details</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+            <div class="row mt-5">
+    
+              <div class="col-lg-4">
+                <div class="info">
+                  <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Location:</h4>
+                    <p>Seoul, South Korea</p>
+                  </div>
+    
+                  <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>yoqub.xamidoff19@gmail.com</p>
+                  </div>
+                  <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Call:</h4>
+                    <p>+8210 6661 9808</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+    
+              <div class="col-lg-8 mt-5 mt-lg-0">
+    
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Name Surename" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="submitb">
+                    <button type="submit" class="btn-solid-lgg page-scroll">Submit</button>
+                </div>
+                </form>
+    
+              </div>
+    
+            </div>
+    
+          </div>
     </div> <!-- end of form-1 -->  
     <!-- end of contact -->
+    
 
 
     <!-- Footer -->
     <div class="footer bg-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
+                <footer class="footer-distributed">
+
+                    <div class="footer-right">
+        
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.facebook.com/yoqub610">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.behance.net/yoqubxamidoff">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-behance fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://dribbble.com/jacob_artworks">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-dribbble fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/yoqub610">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
@@ -554,30 +600,34 @@
                         <span class="fa-stack">
                             <a href="#your-link">
                                 <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                                <i class="fab fa-telegram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
+        
+                    </div>
+        
+                    <div class="footer-left">
+        
+                        <p class="footer-links">
+                            <a class="link-1" href="#header">Home</a>
+        
+                            <a href="#about">About Me</a>
+        
+                            <a href="#services">Services</a>
+        
+                            <a href="#projects">Portfolio</a>
+        
+                            <a href="#contact">Contact Me</a>
+        
+                        </p>
+        
+                        <div class="footer-info"><p>Company Name &copy; 2015 Lorem ipsum, remque quaerat eum, nesciunt ea, error minima quis quia alias?</p></div>
+                    </div>
+        
+                </footer> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
+         <!-- Copyright -->
     <div class="copyright bg-gray">
         <div class="container">
             <div class="row">
@@ -597,6 +647,11 @@
         
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+    </div> <!-- end of footer -->
+    
+		
+
+   
     
     	
     <!-- Scripts -->
