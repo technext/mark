@@ -190,6 +190,10 @@ h6 {
 	line-height: 1.375rem;
 	font-family: "Poppins"
 }
+.CV{
+	padding-left: 10px;
+	list-style-position: inside;
+}
 
 .p-large {
 	font-size: 1.125rem;
@@ -635,9 +639,9 @@ input[type='checkbox'] {
 /*     Header     */
 /******************/
 .header {
-	padding-top: 7rem;
-	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
+	padding-top: 6rem;
+	padding-bottom: 4.5rem;
+	background: url('../images/header-back.png') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -1347,6 +1351,8 @@ a:hover.back-to-top {
 
 	/* About */
 	.basic-1 .text-container.first {
+		margin-top: 50px;
+		text-align: center;
 		margin-right: 2rem;
 	}
 
