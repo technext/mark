@@ -112,17 +112,15 @@ section {
   
   .footer-distributed .footer-right a {
 	display: inline-block;
-	width: 35px;
-	height: 35px;
 	background-color: #24262a;
-	border-radius: 2px;
-	font-size: 20px;
+	border-radius: 50%;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-	margin-left: 3px;
+	margin-left: 14px;
 	transition:all .25s;
   }
+
   
   .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
   
@@ -141,7 +139,123 @@ section {
 	.footer-distributed .footer-left p.footer-links {
 	  line-height: 1.8;
 	}
+
+
+	
   }
+
+
+
+
+
+
+  /* gallery__content effect */
+
+.gallery__content{
+	display:flex;
+	max-width:100%;
+	flex-wrap:wrap;
+}
+
+
+
+.img-fluid {
+	object-fit:cover;
+	width:100%;
+	height:100%;
+}
+
+
+.gallery__content-item{
+	transition: all 0.5s ease-in-out;
+	position:relative;
+	overflow:hidden;
+	
+}
+
+.gallery__content-item::before {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    content: "";
+    opacity: 0;
+	visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.gallery__content-item::after {
+    content: "+";
+    font-size: 2.7rem;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+	visibility: hidden;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.5);
+    z-index: 1;
+}
+
+.gallery__content-item:hover:after {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.gallery__content-item:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery__content-item:hover{
+    transform: scale(1.05);
+}
+
+.gallery__content-item-img {
+    vertical-align: bottom;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.lg-outer .lg-image{
+	padding: 50px 0;
+}
+
+
+
+
+/* gallery__content effect */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1 {
 	color: #24262a;
@@ -255,7 +369,7 @@ a:hover {
 
 .btn-solid-reg {
 	display: inline-block;
-	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	padding: 1.575rem 2.45rem 1.575rem 2.45rem;
 	border: 1px solid #0b36a8;
 	background-color: #0b36a8;
 	color: #ffffff;
@@ -855,6 +969,8 @@ input[type='checkbox'] {
 	animation: text 0.5s;
 }
 
+
+
 @keyframes text{
 	0%{
 		margin-top: 20px;
@@ -916,6 +1032,31 @@ input[type='checkbox'] {
 	transition: all 0.2s;
 }
 
+
+
+
+.dots{
+	display: flex;
+	align-items: center;
+}
+.dots:after{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: rgb(255, 123, 0);
+	border-radius: 50%;
+	margin: 0 10px;
+}
+.dots::before{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: red;
+	border-radius: 50%;
+	order: 3;
+}
 
 /* end of hover animation */
 
@@ -1108,9 +1249,40 @@ input[type='checkbox'] {
     color: #ffffff;
 	transition: all 0.2s ease;
 }
+.social_icons{
+	background: blue;
+    padding: 13px 18px;
+    border-radius: 50%;
+    font-size: 19px;
+	transition: all 0.25s;
+	width: 50px;
+}
+.social_icons:hover{
+	background: white;
+	color: blue;
+	
+}
+
+.social_iconst{
+	background: #fff;
+	border-radius: none;
+	color: blue;
+	width: none;
+	padding: none;
+}
+.social_iconst:hover{
+	background: white;
+	color: blue;
+	
+}
+.footer-right a:last-of-type .social_icons{
+	
+}
+
+
 
 .footer .fa-stack .fa-stack-2x {
-	color: #0b36a8;
+	color: #ffffff;
 	transition: all 0.2s ease;
 }
 
@@ -1119,7 +1291,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #ffffff;
+    color: #0b36a8;
 }
 
 
@@ -1511,5 +1683,23 @@ a:hover.back-to-top {
 		margin-left: 2.875rem;
 	}
 	/* end of extra pages */
+	.project_infos{
+		display: flex;
+		justify-content: center;
+		padding-bottom: 50px;
+		
+	}
+	.target_audience{	
+		padding-left: 50px;
+		padding-right: 95px;
+	}
+	
+	.my_Role{
+		padding-right: 50px;
+		padding-left: 190px;
+		
+		
+	}
+	
 }
 /* end of min-width 1200px */

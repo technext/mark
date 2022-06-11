@@ -1,5 +1,11 @@
 /* Description: Custom JS file */
 
+/* gallery__content effect */
+lightGallery(document.querySelector('.gallery__content'));
+lightGallery(document.querySelector('.gallery2'));
+lightGallery(document.querySelector('.gallery3'));
+/* gallery__content effect */
+
 
 (function($) {
     "use strict"; 
